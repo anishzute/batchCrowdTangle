@@ -1,6 +1,7 @@
 import requests
 import json
 import xlrd
+import time
 
 loc = input("Enter Excel file path: ")
 col = int(input("Enter Excel column number from which to read links: "))
@@ -26,5 +27,6 @@ for i in range(sheet.nrows):
     json.dump(data, writeFile, indent=4)
     writeFile.close()
     print(f'Writing JSON to {filename}')
+    time.sleep(2)
 
 print('done.')
