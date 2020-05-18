@@ -7,7 +7,7 @@ python script to run batch crowd tangle link API request on a list of links in a
 
 Install requirements: 
 
-`pip install requests xlrd`
+`pip install requests xlrd json`
 
 CD to directory and run script:
 
