@@ -3,8 +3,8 @@ import json
 import xlrd
 
 loc = input("Enter Excel file path: ")
-col = input("Enter Excel column number from which to read links: ")
-apiKey = input("Enter CrowdTangle API key: ")
+col = int(input("Enter Excel column number from which to read links: "))
+apiKey = input("Enter CrowdTangle API key: ").strip()
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 #sheet.cell_value(0, 0)
