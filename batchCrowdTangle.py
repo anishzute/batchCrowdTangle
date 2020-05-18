@@ -19,7 +19,9 @@ for i in range(sheet.nrows):
     response = requests.get(apiURL, params=parameters, headers=headers)
     data = response.json()
     # print(data)
-    filename = str(i) + '.json'
+    split = link.split('/')[4]
+#     print(split[4])
+    filename = split + '.json'
     writeFile = open(filename, 'w')
     json.dump(data, writeFile, indent=4)
     writeFile.close()
