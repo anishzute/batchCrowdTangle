@@ -3,7 +3,7 @@ python script to run batch crowd tangle link API request on a list of links in a
 
 
 
-#To Use:
+**Instructions:**
 
 Install requirements: 
 
@@ -12,3 +12,5 @@ Install requirements:
 CD to directory and run script:
 
 `python batchCrowdTangle.py`
+
+Follow the prompts.
